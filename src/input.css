@@ -1,1 +1,48 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+@theme {
+  --font-nav: "Sora", "sans-serif";
+}
+
+body {
+  @apply grid place-content-center;
+}
+
+/* NAVBAR */
+
+nav {
+  @apply flex justify-between items-center h-[100px] bg-[#FFF9F4] w-dvw px-4 lg:px-10 xl:px-16 border-[0.5px] border-black font-nav;
+}
+
+.nav-logo {
+  @apply flex gap-x-3 items-center;
+}
+
+nav h1 {
+  @apply text-[26px] font-normal text-black;
+}
+
+nav ul {
+  @apply hidden lg:flex lg:items-center lg:text-xl cursor-pointer;
+}
+
+.nav-buttons {
+  @apply flex gap-x-3;
+}
+
+.nav-buttons button {
+  @apply flex rounded-[8px] cursor-pointer px-[30px] py-2.5;
+}
+
+.nav-buttons button:first-child {
+  @apply gap-x-2.5 border border-[#FFDC26];
+}
+
+.nav-buttons button:last-child {
+  @apply gap-x-[23px] border border-[#FFDC26] bg-[#FFDC26];
+}
+
+.menu {
+  @apply lg:hidden;
+}

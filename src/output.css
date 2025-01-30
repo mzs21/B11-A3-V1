@@ -377,6 +377,7 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --font-nav: "Sora", "sans-serif";
   }
 }
 @layer base {
@@ -521,22 +522,96 @@
   }
 }
 @layer utilities {
-  .bg-amber-700 {
-    background-color: var(--color-amber-700);
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .gap-x-3 {
+    column-gap: calc(var(--spacing) * 3);
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
+  .gap-x-8 {
+    column-gap: calc(var(--spacing) * 8);
   }
-  .underline {
-    text-decoration-line: underline;
+  .text-\[\#FFDC26\] {
+    color: #FFDC26;
   }
-  .\!\[https\:\/\/raw\.githubusercontent\.com\/tailwindlabs\/tailwindcss\/HEAD\/\.github\/logo-dark\.svg\] {
-    https: //raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-dark.svg !important;
+}
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+body {
+  display: grid;
+  place-content: center;
+}
+nav {
+  display: flex;
+  height: 100px;
+  width: 100dvw;
+  align-items: center;
+  justify-content: space-between;
+  border-style: var(--tw-border-style);
+  border-width: 0.5px;
+  border-color: var(--color-black);
+  background-color: #FFF9F4;
+  padding-inline: calc(var(--spacing) * 4);
+  font-family: var(--font-nav);
+  @media (width >= 64rem) {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  @media (width >= 80rem) {
+    padding-inline: calc(var(--spacing) * 16);
+  }
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  column-gap: calc(var(--spacing) * 3);
+}
+nav h1 {
+  font-size: 26px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-black);
+}
+nav ul {
+  display: none;
+  cursor: pointer;
+  @media (width >= 64rem) {
+    display: flex;
+  }
+  @media (width >= 64rem) {
+    align-items: center;
+  }
+  @media (width >= 64rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+}
+.nav-buttons {
+  display: flex;
+  column-gap: calc(var(--spacing) * 3);
+}
+.nav-buttons button {
+  display: flex;
+  cursor: pointer;
+  border-radius: 8px;
+  padding-inline: 30px;
+  padding-block: calc(var(--spacing) * 2.5);
+}
+.nav-buttons button:first-child {
+  column-gap: calc(var(--spacing) * 2.5);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: #FFDC26;
+}
+.nav-buttons button:last-child {
+  column-gap: 23px;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: #FFDC26;
+  background-color: #FFDC26;
+}
+.menu {
+  @media (width >= 64rem) {
+    display: none;
   }
 }
 @keyframes spin {
@@ -564,6 +639,11 @@
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
