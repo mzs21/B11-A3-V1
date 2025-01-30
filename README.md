@@ -1,8 +1,19 @@
 ### WELCOME TO ASSIGNMENT-003
-<p>You will be assigned a random category. Follow the given category to complete your task accordingly.</p>
 
-# Category-001 :  <img width=40 src="/Assignment_03_Category_0001/c1-assets/logo-header.png"/> PET-SHOP
-# Category-002 :  <img width=150 src="/Assignment_03_Category_0002/c2-assets/logo-header.png"/> 
+# Category-001 :  <img width=40 src="./c1-assets/logo-header.png"/> PET-SHOP
+
+## CSS Technologoies: <img width=40  src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg"/> tailwindcss
+
+## How to Run the Project
+1. Clone the repository
+2. Run the following command in CLI to install Tailwind CSS v4
+```bash 
+npm install tailwindcss @tailwindcss/cli
+``` 
+3. Run the following command in CLI to run on local server
+```bash 
+npm run dev
+``` 
 
 ## **📅 Deadline For 60 marks**: 1st February , 2025 ( 11:59 pm ⏱️)
 
