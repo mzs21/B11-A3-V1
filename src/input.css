@@ -95,3 +95,37 @@ nav ul {
   }
 }
 /* BANNER */
+
+/* CATEGORIES */
+.categories {
+  @apply px-4 py-10 lg:px-10 xl:px-16;
+}
+
+.categories h1 {
+  @apply font-normal font-adlam_display text-2xl xl:mt-32 lg:text-4xl;
+}
+
+.categories-container {
+  @apply grid grid-cols-2 gap-2.5 mt-12 md:grid-cols-3 lg:grid-cols-6;
+}
+
+.category {
+  @apply grid place-content-center border rounded-[10.45px] bg-[#F9DF8A] border-[#F9DF8A] h-56 md:h-64 gap-y-6;
+}
+
+.category-img {
+  @apply w-24 h-24 bg-white rounded-full grid place-content-center;
+}
+
+.category-texts {
+  @apply text-center grid gap-y-2.5 font-normal;
+}
+
+.category-texts h2 {
+  @apply font-adlam_display text-lg lg:text-xl;
+}
+
+.category-texts p {
+  @apply font-sora text-sm lg:text-base;
+}
+/* CATEGORIES */
