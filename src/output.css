@@ -377,7 +377,8 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --font-nav: "Sora", "sans-serif";
+    --font-sora: "Sora", "sans-serif";
+    --font-adlam_display: ADLaM Display, "sans-serif";
   }
 }
 @layer base {
@@ -537,6 +538,7 @@
   }
 }
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
 body {
   display: grid;
   place-content: center;
@@ -552,7 +554,7 @@ nav {
   border-color: var(--color-black);
   background-color: #FFF9F4;
   padding-inline: calc(var(--spacing) * 4);
-  font-family: var(--font-nav);
+  font-family: var(--font-sora);
   @media (width >= 64rem) {
     padding-inline: calc(var(--spacing) * 10);
   }
@@ -592,7 +594,7 @@ nav ul {
 .nav-buttons button {
   display: flex;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   padding-inline: 30px;
   padding-block: calc(var(--spacing) * 2.5);
 }
@@ -613,6 +615,58 @@ nav ul {
   @media (width >= 64rem) {
     display: none;
   }
+}
+.banner-container {
+  position: relative;
+  display: grid;
+  place-content: start;
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 10);
+}
+.banner-text {
+  margin-bottom: calc(var(--spacing) * 32);
+  display: grid;
+  place-content: start;
+  row-gap: calc(var(--spacing) * 3);
+  border-radius: var(--radius-lg);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  --tw-border-style: none;
+  border-style: none;
+}
+.banner-text h1 {
+  font-family: var(--font-adlam_display);
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+}
+.banner-text p {
+  font-family: var(--font-sora);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-black);
+  opacity: 70%;
+}
+.banner-text button {
+  display: flex;
+  cursor: pointer;
+  column-gap: calc(var(--spacing) * 2.5);
+  place-self: start;
+  border-radius: var(--radius-lg);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: #FFDC26;
+  background-color: #FFDC26;
+  padding-inline: 30px;
+  padding-block: calc(var(--spacing) * 2.5);
+}
+.banner-container img {
+  position: absolute;
+  top: calc(var(--spacing) * 60);
+  z-index: calc(10 * -1);
 }
 @keyframes spin {
   to {
