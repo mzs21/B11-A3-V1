@@ -113,7 +113,7 @@ nav ul {
 }
 
 .categories h1 {
-  @apply font-normal font-adlam_display text-2xl lg:text-4xl;
+  @apply font-normal font-adlam_display text-2xl lg:text-4xl xl:mt-16;
 }
 
 .categories-container {
