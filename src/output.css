@@ -771,7 +771,7 @@ nav ul {
   line-height: var(--tw-leading, var(--text-2xl--line-height));
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
-  @media (width >= 64rem) {
+  @media (width >= 48rem) {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
@@ -1096,6 +1096,34 @@ nav ul {
   display: none;
   @media (width >= 64rem) {
     display: flex;
+  }
+}
+.everyday-price-container {
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 10);
+  @media (width >= 48rem) {
+    padding-block: calc(var(--spacing) * 22);
+  }
+  @media (width >= 64rem) {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  @media (width >= 80rem) {
+    padding-inline: calc(var(--spacing) * 16);
+  }
+}
+.everyday-price-container h1 {
+  text-align: left;
+  font-family: var(--font-adlam_display);
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  @media (width >= 48rem) {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  @media (width >= 64rem) {
+    margin-bottom: calc(var(--spacing) * 6);
   }
 }
 @keyframes spin {

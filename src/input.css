@@ -114,7 +114,6 @@ nav ul {
 *MARK: BANNER 
 */
 
-
 /* 
 *MARK:CATEGORIES 
 */
@@ -123,7 +122,7 @@ nav ul {
 }
 
 .categories h1 {
-  @apply font-normal font-adlam_display text-2xl lg:text-4xl xl:mt-16;
+  @apply font-normal font-adlam_display text-2xl md:text-4xl xl:mt-16;
 }
 
 .categories-container {
@@ -152,8 +151,6 @@ nav ul {
 /* 
 *MARK: CATEGORIES 
 */
-
-
 
 /* 
 *MARK: TRENDING 
@@ -247,12 +244,17 @@ nav ul {
 *MARK: TRENDING 
 */
 
-
-
 /* 
 *MARK: EVERYDAY_PRICE 
 */
 
+.everyday-price-container {
+  @apply px-4 py-10 md:py-22 lg:px-10 xl:px-16;
+}
+
+.everyday-price-container h1 {
+  @apply font-adlam_display font-normal text-2xl md:text-4xl text-left lg:mb-6;
+}
 
 /* 
 *MARK: EVERYDAY_PRICE 
