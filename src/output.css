@@ -377,8 +377,8 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --font-sora: "Sora", "sans-serif";
-    --font-adlam_display: ADLaM Display, "sans-serif";
+    --font-sora: "Sora", "serif";
+    --font-adlam_display: "ADLaM Display", "serif";
   }
 }
 @layer base {
@@ -537,11 +537,10 @@
     color: #FFDC26;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
 body {
   display: grid;
   place-content: center;
+  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -618,13 +617,25 @@ nav ul {
 }
 .banner-container {
   position: relative;
+  margin-bottom: calc(var(--spacing) * 44);
   display: grid;
   place-content: start;
   padding-inline: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 10);
+  @media (width >= 48rem) {
+    margin-bottom: calc(var(--spacing) * 72);
+  }
+  @media (width >= 64rem) {
+    margin-bottom: calc(var(--spacing) * 96);
+  }
+  @media (width >= 64rem) {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  @media (width >= 80rem) {
+    padding-inline: calc(var(--spacing) * 16);
+  }
 }
 .banner-text {
-  margin-bottom: calc(var(--spacing) * 32);
   display: grid;
   place-content: start;
   row-gap: calc(var(--spacing) * 3);
@@ -640,6 +651,9 @@ nav ul {
   line-height: var(--tw-leading, var(--text-3xl--line-height));
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
+  @media (width >= 48rem) {
+    font-size: 56px;
+  }
 }
 .banner-text p {
   font-family: var(--font-sora);
@@ -649,6 +663,13 @@ nav ul {
   font-weight: var(--font-weight-normal);
   color: var(--color-black);
   opacity: 70%;
+  @media (width >= 48rem) {
+    width: 672px;
+  }
+  @media (width >= 48rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
 }
 .banner-text button {
   display: flex;
@@ -662,11 +683,62 @@ nav ul {
   background-color: #FFDC26;
   padding-inline: 30px;
   padding-block: calc(var(--spacing) * 2.5);
+  font-family: var(--font-sora);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-black);
+  @media (width >= 48rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
 }
 .banner-container img {
   position: absolute;
   top: calc(var(--spacing) * 60);
   z-index: calc(10 * -1);
+  @media (width >= 48rem) {
+    top: calc(var(--spacing) * 54);
+  }
+  @media (width >= 48rem) {
+    --tw-scale-x: 90%;
+    --tw-scale-y: 90%;
+    --tw-scale-z: 90%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  @media (width >= 64rem) {
+    top: calc(var(--spacing) * 10);
+  }
+  @media (width >= 64rem) {
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    --tw-scale-z: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  @media (width >= 80rem) {
+    top: calc(var(--spacing) * 0);
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner-text h1 {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .banner-text p {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+}
+@media screen and (max-width: 425px) and (min-width: 378px) {
+  .banner-text h1 {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .banner-text p {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
 }
 @keyframes spin {
   to {
@@ -702,4 +774,19 @@ nav ul {
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }

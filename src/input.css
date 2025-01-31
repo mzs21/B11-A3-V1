@@ -1,14 +1,12 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
 
 @theme {
-  --font-sora: "Sora", "sans-serif";
-  --font-adlam_display: ADLaM Display, "sans-serif";
+  --font-sora: "Sora", "serif";
+  --font-adlam_display: "ADLaM Display", "serif";
 }
 
 body {
-  @apply grid place-content-center;
+  @apply grid place-content-center overflow-x-hidden;
 }
 
 /* NAVBAR */
@@ -54,26 +52,46 @@ nav ul {
 /* BANNER */
 
 .banner-container {
-  @apply grid place-content-start px-4 py-10 relative;
+  @apply grid place-content-start px-4 py-10 relative lg:px-10 xl:px-16 mb-44 md:mb-72 lg:mb-96;
 }
 
 .banner-text {
-  @apply grid place-content-start gap-y-3 border rounded-lg border-none mb-32;
+  @apply grid place-content-start gap-y-3 border rounded-lg border-none;
 }
 
 .banner-text h1 {
-  @apply font-normal text-3xl font-adlam_display;
+  @apply font-normal text-3xl font-adlam_display md:text-[56px];
 }
 
 .banner-text p {
-  @apply text-base font-normal font-sora text-black opacity-70;
+  @apply text-base font-normal font-sora text-black opacity-70 md:text-xl md:w-[672px];
 }
 
 .banner-text button {
-  @apply place-self-start flex rounded-lg cursor-pointer px-[30px] py-2.5 border border-[#FFDC26] bg-[#FFDC26] gap-x-2.5;
+  @apply place-self-start flex rounded-lg cursor-pointer px-[30px] py-2.5 border border-[#FFDC26] bg-[#FFDC26] gap-x-2.5 text-base font-sora text-black font-normal md:text-xl;
 }
 
 .banner-container img {
-  @apply absolute top-60 -z-10;
+  @apply absolute top-60 -z-10 md:scale-90 md:top-54 lg:scale-100 lg:top-10 xl:top-0;
+}
+
+@media screen and (max-width: 320px) {
+  .banner-text h1 {
+    @apply text-2xl;
+  }
+
+  .banner-text p {
+    @apply text-sm;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 378px) {
+  .banner-text h1 {
+    @apply text-4xl;
+  }
+
+  .banner-text p {
+    @apply text-lg;
+  }
 }
 /* BANNER */
