@@ -83,8 +83,7 @@ nav ul {
   .banner-text p {
     @apply text-sm;
   }
-}
-@media screen and (max-width: 320px) {
+
   .banner-container img {
     @apply absolute top-50;
   }
