@@ -754,7 +754,10 @@ nav ul {
 }
 .categories {
   padding-inline: calc(var(--spacing) * 4);
-  padding-block: calc(var(--spacing) * 30);
+  padding-block: calc(var(--spacing) * 10);
+  @media (width >= 48rem) {
+    padding-block: calc(var(--spacing) * 24);
+  }
   @media (width >= 64rem) {
     padding-inline: calc(var(--spacing) * 10);
   }
@@ -837,7 +840,10 @@ nav ul {
 }
 .trending-container {
   padding-inline: calc(var(--spacing) * 4);
-  padding-block: calc(var(--spacing) * 32);
+  padding-block: calc(var(--spacing) * 10);
+  @media (width >= 48rem) {
+    padding-block: calc(var(--spacing) * 22);
+  }
   @media (width >= 64rem) {
     background-color: #FFF9F4;
   }

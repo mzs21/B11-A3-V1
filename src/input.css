@@ -9,7 +9,9 @@ body {
   @apply grid place-content-center overflow-x-hidden;
 }
 
-/* NAVBAR */
+/* 
+*MARK: NAVBAR 
+*/
 
 nav {
   @apply flex justify-between items-center h-[100px] bg-[#FFF9F4] w-dvw px-4 lg:px-10 xl:px-16 border-[0.5px] border-black font-sora;
@@ -47,9 +49,13 @@ nav ul {
   @apply lg:hidden;
 }
 
-/* NAVBAR */
+/* 
+*MARK: NAVBAR 
+*/
 
-/* BANNER */
+/* 
+*MARK: BANNER 
+*/
 
 .banner-container {
   @apply grid place-content-start  relative  px-4 py-10 lg:px-10 xl:px-16 mb-24 md:mb-64 w-full;
@@ -104,11 +110,16 @@ nav ul {
     @apply text-lg;
   }
 }
-/* BANNER */
+/* 
+*MARK: BANNER 
+*/
 
-/* CATEGORIES */
+
+/* 
+*MARK:CATEGORIES 
+*/
 .categories {
-  @apply px-4 py-30 lg:px-10 xl:px-16;
+  @apply px-4 py-10 md:py-24 lg:px-10 xl:px-16;
 }
 
 .categories h1 {
@@ -138,12 +149,18 @@ nav ul {
 .category-texts p {
   @apply font-sora text-sm lg:text-base;
 }
-/* CATEGORIES */
+/* 
+*MARK: CATEGORIES 
+*/
 
-/* TRENDING */
+
+
+/* 
+*MARK: TRENDING 
+*/
 
 .trending-container {
-  @apply px-4 py-32 lg:px-10 xl:px-16 lg:bg-[#FFF9F4];
+  @apply px-4 py-10 md:py-22 lg:px-10 xl:px-16 lg:bg-[#FFF9F4];
 }
 
 .trending-container h1 {
@@ -226,4 +243,17 @@ nav ul {
 .trending-products .product:last-child {
   @apply hidden lg:flex;
 }
-/* TRENDING */
+/* 
+*MARK: TRENDING 
+*/
+
+
+
+/* 
+*MARK: EVERYDAY_PRICE 
+*/
+
+
+/* 
+*MARK: EVERYDAY_PRICE 
+*/
