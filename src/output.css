@@ -718,10 +718,7 @@ nav ul {
     left: calc(var(--spacing) * 24);
   }
   @media (width >= 80rem) {
-    --tw-scale-x: 110%;
-    --tw-scale-y: 110%;
-    --tw-scale-z: 110%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
+    scale: 120%;
   }
 }
 @media screen and (max-width: 320px) {
