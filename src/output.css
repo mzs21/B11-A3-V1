@@ -774,9 +774,6 @@ nav ul {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
-  @media (width >= 80rem) {
-    margin-top: calc(var(--spacing) * 32);
-  }
 }
 .categories-container {
   margin-top: calc(var(--spacing) * 12);
