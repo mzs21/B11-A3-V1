@@ -627,13 +627,10 @@ nav ul {
   padding-inline: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 10);
   @media (width >= 48rem) {
-    margin-bottom: calc(var(--spacing) * 72);
+    margin-bottom: calc(var(--spacing) * 64);
   }
   @media (width >= 64rem) {
     padding-inline: calc(var(--spacing) * 10);
-  }
-  @media (width >= 80rem) {
-    margin-bottom: calc(var(--spacing) * 96);
   }
   @media (width >= 80rem) {
     padding-inline: calc(var(--spacing) * 16);
@@ -757,7 +754,7 @@ nav ul {
 }
 .categories {
   padding-inline: calc(var(--spacing) * 4);
-  padding-block: calc(var(--spacing) * 10);
+  padding-block: calc(var(--spacing) * 30);
   @media (width >= 64rem) {
     padding-inline: calc(var(--spacing) * 10);
   }

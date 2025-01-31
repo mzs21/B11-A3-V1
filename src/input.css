@@ -52,7 +52,7 @@ nav ul {
 /* BANNER */
 
 .banner-container {
-  @apply grid place-content-start  relative  px-4 py-10 lg:px-10 xl:px-16 mb-24 md:mb-72 xl:mb-96 w-full;
+  @apply grid place-content-start  relative  px-4 py-10 lg:px-10 xl:px-16 mb-24 md:mb-64 w-full;
 }
 
 .banner-text {
@@ -108,7 +108,7 @@ nav ul {
 
 /* CATEGORIES */
 .categories {
-  @apply px-4 py-10 lg:px-10 xl:px-16;
+  @apply px-4 py-30 lg:px-10 xl:px-16;
 }
 
 .categories h1 {
@@ -211,8 +211,8 @@ nav ul {
 .product-rating {
   @apply flex gap-x-1.5 md:gap-x-3 font-normal text-[10px] md:text-base items-center justify-start;
 }
-.product-rating svg{
-  @apply md:w-4 md:h-4
+.product-rating svg {
+  @apply md:w-4 md:h-4;
 }
 
 .trending-product-texts h6 {
