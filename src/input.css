@@ -52,7 +52,7 @@ nav ul {
 /* BANNER */
 
 .banner-container {
-  @apply grid place-content-start px-4 py-10 relative lg:px-10 xl:px-16 mb-44 md:mb-72 lg:mb-96;
+  @apply grid place-content-start  relative  px-4 py-10 lg:px-10 xl:px-16 mb-24 md:mb-72 xl:mb-96;
 }
 
 .banner-text {
@@ -72,7 +72,7 @@ nav ul {
 }
 
 .banner-container img {
-  @apply absolute top-60 -z-10 md:scale-90 md:top-54 lg:scale-100 lg:top-10 xl:top-0;
+  @apply absolute top-60 -z-10 md:scale-90 md:top-54 lg:scale-100 lg:top-10 xl:top-0 xl:left-28 xl:scale-110;
 }
 
 @media screen and (max-width: 320px) {
