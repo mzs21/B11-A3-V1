@@ -118,7 +118,7 @@ nav ul {
 *MARK:CATEGORIES 
 */
 .categories {
-  @apply px-4 py-10 md:py-24 lg:px-10 xl:px-16;
+  @apply px-4 py-10 md:py-16 lg:py-22 lg:px-10 xl:px-16;
 }
 
 .categories h1 {
@@ -157,7 +157,7 @@ nav ul {
 */
 
 .trending-container {
-  @apply px-4 py-10 md:py-22 lg:px-10 xl:px-16 lg:bg-[#FFF9F4];
+  @apply px-4 py-10 md:py-16 lg:py-22 lg:px-10 xl:px-16 lg:bg-[#FFF9F4];
 }
 
 .trending-container h1 {
@@ -249,7 +249,7 @@ nav ul {
 */
 
 .everyday-price-container {
-  @apply px-4 py-10 md:py-22 lg:px-10 xl:px-16;
+  @apply px-4 py-10 md:py-16 lg:py-22  lg:px-10 xl:px-16;
 }
 
 .everyday-price-container h1 {
