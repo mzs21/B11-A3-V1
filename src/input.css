@@ -52,7 +52,7 @@ nav ul {
 /* BANNER */
 
 .banner-container {
-  @apply grid place-content-start  relative  px-4 py-10 lg:px-10 xl:px-16 mb-24 md:mb-72 xl:mb-96;
+  @apply grid place-content-start  relative  px-4 py-10 lg:px-10 xl:px-16 mb-24 md:mb-72 xl:mb-96 w-dvw;
 }
 
 .banner-text {
