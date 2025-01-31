@@ -710,14 +710,17 @@ nav ul {
   @media (width >= 64rem) {
     top: calc(var(--spacing) * 10);
   }
-  @media (width >= 64rem) {
-    --tw-scale-x: 100%;
-    --tw-scale-y: 100%;
-    --tw-scale-z: 100%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
   @media (width >= 80rem) {
     top: calc(var(--spacing) * 0);
+  }
+  @media (width >= 80rem) {
+    left: calc(var(--spacing) * 24);
+  }
+  @media (width >= 80rem) {
+    --tw-scale-x: 110%;
+    --tw-scale-y: 110%;
+    --tw-scale-z: 110%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
 }
 @media screen and (max-width: 320px) {
