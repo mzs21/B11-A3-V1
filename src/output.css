@@ -719,9 +719,6 @@ nav ul {
   @media (width >= 80rem) {
     top: calc(var(--spacing) * 0);
   }
-  @media (width >= 80rem) {
-    left: calc(var(--spacing) * 28);
-  }
 }
 @media screen and (max-width: 320px) {
   .banner-text h1 {
@@ -733,7 +730,19 @@ nav ul {
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
 }
-@media screen and (max-width: 425px) and (min-width: 378px) {
+@media screen and (max-width: 320px) {
+  .banner-container img {
+    position: absolute;
+    top: calc(var(--spacing) * 50);
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .banner-container img {
+    position: absolute;
+    top: calc(var(--spacing) * 56);
+  }
+}
+@media screen and (max-width: 425px) and (min-width: 376px) {
   .banner-text h1 {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));

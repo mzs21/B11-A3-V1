@@ -72,7 +72,7 @@ nav ul {
 }
 
 .banner-container img {
-  @apply absolute top-60 -z-10 md:scale-90 md:top-54 lg:scale-100 lg:top-10 xl:top-0 xl:left-28;
+  @apply absolute top-60 -z-10 md:scale-90 md:top-54 lg:scale-100 lg:top-10 xl:top-0;
 }
 
 @media screen and (max-width: 320px) {
@@ -84,8 +84,19 @@ nav ul {
     @apply text-sm;
   }
 }
+@media screen and (max-width: 320px) {
+  .banner-container img {
+    @apply absolute top-50;
+  }
+}
 
-@media screen and (max-width: 425px) and (min-width: 378px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .banner-container img {
+    @apply absolute top-56;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
   .banner-text h1 {
     @apply text-4xl;
   }
