@@ -72,7 +72,7 @@ nav ul {
 }
 
 .banner-container img {
-  @apply absolute top-60 -z-10 md:scale-90 md:top-54 xl:scale-[120%] lg:top-10 xl:top-0 xl:left-24;
+  @apply absolute top-60 -z-10 md:scale-90 md:top-54 xl:scale-110 lg:top-10 xl:top-0 xl:left-24;
 }
 
 @media screen and (max-width: 320px) {
