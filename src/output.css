@@ -722,12 +722,6 @@ nav ul {
   @media (width >= 80rem) {
     left: calc(var(--spacing) * 28);
   }
-  @media (width >= 80rem) {
-    --tw-scale-x: 110%;
-    --tw-scale-y: 110%;
-    --tw-scale-z: 110%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
 }
 @media screen and (max-width: 320px) {
   .banner-text h1 {
