@@ -1687,6 +1687,16 @@ main {
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
 }
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .newsletter-texts input {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .newsletter-texts input {
+    width: 100%;
+  }
+}
 .newsletter-texts button {
   display: grid;
   max-width: fit-content;

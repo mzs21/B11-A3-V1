@@ -424,6 +424,18 @@ main {
   @apply w-[90%] px-2 py-2 bg-white rounded-md md:rounded-lg font-sora text-sm md:text-base leading-8 font-normal place-self-center md:place-self-start placeholder:text-[#C4C4C4] text-black;
 }
 
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .newsletter-texts input {
+    @apply w-[95%];
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .newsletter-texts input {
+    @apply w-full;
+  }
+}
+
 .newsletter-texts button {
   @apply px-6 py-2 grid place-content-center gap-x-2.5 rounded-md bg-[#FFDC26] font-sora font-normal text-sm md:text-base max-w-fit place-self-center md:place-self-start cursor-pointer;
 }
