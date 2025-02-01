@@ -249,11 +249,106 @@ nav ul {
 */
 
 .everyday-price-container {
-  @apply px-4 py-10 md:py-16 lg:py-22  lg:px-10 xl:px-16;
+  @apply px-4 py-10 md:py-16 lg:py-22 lg:px-10 xl:px-16;
 }
 
 .everyday-price-container h1 {
   @apply font-adlam_display font-normal text-2xl md:text-4xl text-left lg:mb-6;
+}
+
+.price-container {
+  @apply grid place-content-center gap-y-6 lg:grid-cols-5 lg:gap-x-4;
+}
+
+.product-text-style h1 {
+  @apply font-adlam_display font-normal text-[22px];
+}
+
+.product-text-style h2 {
+  @apply font-adlam_display font-normal text-[40px] md:text-[56px];
+}
+
+.product-text-style:first-child h2 {
+  @apply text-white md:text-black;
+}
+
+.product-text-style:last-child h2 {
+  @apply text-[#FFDC26];
+}
+
+.fst-product,
+.scnd-product {
+  @apply grid place-content-start rounded-lg h-[335px] md:h-[380px] xl:h-[480px] px-6 py-10  gap-y-3 mt-8;
+}
+
+.fst-product {
+  @apply bg-gradient-to-r from-[#F7CCFB] to-[#AFD2FD] lg:col-span-3 md:flex md:items-center md:justify-between;
+}
+
+.scnd-product {
+  @apply bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] lg:col-span-2;
+}
+
+.product-img-container .cute-dog,
+.product-img-container .cute-pet {
+  @apply relative scale-75;
+}
+
+.product-img-container .cute-dog {
+  @apply -top-30 -right-14 md:static  md:mt-10 md:-mr-1.5 lg:mt-10 lg:-mr-60 lg:scale-150 xl:-mr-20 xl:mt-16 xl:scale-110;
+}
+
+.product-img-container .cute-pet {
+  @apply -top-30 -right-14 md:-top-60 md:-right-56 md:scale-[70%] lg:scale-[75%]  lg:-right-16 lg:-top-32 lg:w-[312px] lg:h-[392px] xl:-top-26 xl:scale-[90%] xl:-right-40;
+}
+
+@media screen and (max-width: 320px) {
+  .fst-product,
+  .scnd-product {
+    @apply h-[300px];
+  }
+  .product-img-container .cute-dog {
+    @apply -top-28 -right-14;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .product-img-container .cute-pet {
+    @apply scale-[70%] -top-32;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .fst-product,
+  .scnd-product {
+    @apply h-96;
+  }
+  .product-img-container .cute-dog {
+    @apply -top-34 -right-18;
+  }
+  .product-img-container .cute-pet {
+    @apply -top-36 -right-12;
+  }
+}
+
+.scnd-product h1{
+  @apply lg:-mb-0
+}
+
+.fst-product-features {
+  @apply grid place-content-start md:place-content-center gap-y-3 md:pl-10;
+}
+
+.under-price {
+  @apply hidden md:grid font-sora font-normal text-xl;
+}
+
+.fst-product-features .grooming {
+  @apply font-adlam_display font-normal md:text-[32px] lg:mb-0;
+}
+
+.hair-remove {
+  @apply hidden md:grid font-adlam_display font-normal text-2xl text-white;
 }
 
 /* 

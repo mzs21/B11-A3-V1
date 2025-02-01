@@ -523,9 +523,15 @@
   }
 }
 @layer utilities {
+  .grid {
+    display: grid;
+  }
   .size-6 {
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
+  }
+  .w-\[423px\] {
+    width: 423px;
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
@@ -536,8 +542,16 @@
   .gap-x-8 {
     column-gap: calc(var(--spacing) * 8);
   }
+  .gap-y-2 {
+    row-gap: calc(var(--spacing) * 2);
+  }
   .text-\[\#FFDC26\] {
     color: #FFDC26;
+  }
+  .xl\:mt-10 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
   }
 }
 body {
@@ -1135,6 +1149,247 @@ nav ul {
     margin-bottom: calc(var(--spacing) * 6);
   }
 }
+.price-container {
+  display: grid;
+  place-content: center;
+  row-gap: calc(var(--spacing) * 6);
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  @media (width >= 64rem) {
+    column-gap: calc(var(--spacing) * 4);
+  }
+}
+.product-text-style h1 {
+  font-family: var(--font-adlam_display);
+  font-size: 22px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+}
+.product-text-style h2 {
+  font-family: var(--font-adlam_display);
+  font-size: 40px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  @media (width >= 48rem) {
+    font-size: 56px;
+  }
+}
+.product-text-style:first-child h2 {
+  color: var(--color-white);
+  @media (width >= 48rem) {
+    color: var(--color-black);
+  }
+}
+.product-text-style:last-child h2 {
+  color: #FFDC26;
+}
+.fst-product, .scnd-product {
+  margin-top: calc(var(--spacing) * 8);
+  display: grid;
+  height: 335px;
+  place-content: start;
+  row-gap: calc(var(--spacing) * 3);
+  border-radius: var(--radius-lg);
+  padding-inline: calc(var(--spacing) * 6);
+  padding-block: calc(var(--spacing) * 10);
+  @media (width >= 48rem) {
+    height: 380px;
+  }
+  @media (width >= 80rem) {
+    height: 480px;
+  }
+}
+.fst-product {
+  --tw-gradient-position: to right in oklab,;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+  --tw-gradient-from: #F7CCFB;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position,) var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  --tw-gradient-to: #AFD2FD;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position,) var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  @media (width >= 48rem) {
+    display: flex;
+  }
+  @media (width >= 48rem) {
+    align-items: center;
+  }
+  @media (width >= 48rem) {
+    justify-content: space-between;
+  }
+  @media (width >= 64rem) {
+    grid-column: span 3 / span 3;
+  }
+}
+.scnd-product {
+  --tw-gradient-position: to right in oklab,;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+  --tw-gradient-from: #FFF9F4;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position,) var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  --tw-gradient-to: #F9DF8A;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position,) var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  @media (width >= 64rem) {
+    grid-column: span 2 / span 2;
+  }
+}
+.product-img-container .cute-dog, .product-img-container .cute-pet {
+  position: relative;
+  --tw-scale-x: 75%;
+  --tw-scale-y: 75%;
+  --tw-scale-z: 75%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+}
+.product-img-container .cute-dog {
+  top: calc(var(--spacing) * -30);
+  right: calc(var(--spacing) * -14);
+  @media (width >= 48rem) {
+    position: static;
+  }
+  @media (width >= 48rem) {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  @media (width >= 48rem) {
+    margin-right: calc(var(--spacing) * -1.5);
+  }
+  @media (width >= 64rem) {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  @media (width >= 64rem) {
+    margin-right: calc(var(--spacing) * -60);
+  }
+  @media (width >= 64rem) {
+    --tw-scale-x: 150%;
+    --tw-scale-y: 150%;
+    --tw-scale-z: 150%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  @media (width >= 80rem) {
+    margin-top: calc(var(--spacing) * 16);
+  }
+  @media (width >= 80rem) {
+    margin-right: calc(var(--spacing) * -20);
+  }
+  @media (width >= 80rem) {
+    --tw-scale-x: 110%;
+    --tw-scale-y: 110%;
+    --tw-scale-z: 110%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+}
+.product-img-container .cute-pet {
+  top: calc(var(--spacing) * -30);
+  right: calc(var(--spacing) * -14);
+  @media (width >= 48rem) {
+    top: calc(var(--spacing) * -60);
+  }
+  @media (width >= 48rem) {
+    right: calc(var(--spacing) * -56);
+  }
+  @media (width >= 48rem) {
+    scale: 70%;
+  }
+  @media (width >= 64rem) {
+    top: calc(var(--spacing) * -32);
+  }
+  @media (width >= 64rem) {
+    right: calc(var(--spacing) * -16);
+  }
+  @media (width >= 64rem) {
+    height: 392px;
+  }
+  @media (width >= 64rem) {
+    width: 312px;
+  }
+  @media (width >= 64rem) {
+    scale: 75%;
+  }
+  @media (width >= 80rem) {
+    top: calc(var(--spacing) * -26);
+  }
+  @media (width >= 80rem) {
+    right: calc(var(--spacing) * -40);
+  }
+  @media (width >= 80rem) {
+    scale: 90%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fst-product, .scnd-product {
+    height: 300px;
+  }
+  .product-img-container .cute-dog {
+    top: calc(var(--spacing) * -28);
+    right: calc(var(--spacing) * -14);
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .product-img-container .cute-pet {
+    top: calc(var(--spacing) * -32);
+    scale: 70%;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .fst-product, .scnd-product {
+    height: calc(var(--spacing) * 96);
+  }
+  .product-img-container .cute-dog {
+    top: calc(var(--spacing) * -34);
+    right: calc(var(--spacing) * -18);
+  }
+  .product-img-container .cute-pet {
+    top: calc(var(--spacing) * -36);
+    right: calc(var(--spacing) * -12);
+  }
+}
+.scnd-product h1 {
+  @media (width >= 64rem) {
+    margin-bottom: calc(var(--spacing) * -0);
+  }
+}
+.fst-product-features {
+  display: grid;
+  place-content: start;
+  row-gap: calc(var(--spacing) * 3);
+  @media (width >= 48rem) {
+    place-content: center;
+  }
+  @media (width >= 48rem) {
+    padding-left: calc(var(--spacing) * 10);
+  }
+}
+.under-price {
+  display: none;
+  font-family: var(--font-sora);
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  @media (width >= 48rem) {
+    display: grid;
+  }
+}
+.fst-product-features .grooming {
+  font-family: var(--font-adlam_display);
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  @media (width >= 48rem) {
+    font-size: 32px;
+  }
+  @media (width >= 64rem) {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
+}
+.hair-remove {
+  display: none;
+  font-family: var(--font-adlam_display);
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-white);
+  @media (width >= 48rem) {
+    display: grid;
+  }
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -1209,4 +1464,46 @@ nav ul {
   syntax: "*";
   inherits: false;
   initial-value: 1;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
 }
