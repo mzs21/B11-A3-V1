@@ -599,6 +599,10 @@ nav ul {
     align-items: center;
   }
   @media (width >= 64rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  @media (width >= 80rem) {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
@@ -613,12 +617,29 @@ nav ul {
   border-radius: var(--radius-lg);
   padding-inline: 30px;
   padding-block: calc(var(--spacing) * 2.5);
+  @media (width >= 64rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  @media (width >= 80rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
 }
 .nav-buttons button:first-child {
   column-gap: calc(var(--spacing) * 2.5);
   border-style: var(--tw-border-style);
   border-width: 1px;
   border-color: #FFDC26;
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-amber-200);
+    }
+  }
+  @media (width >= 64rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
 }
 .nav-buttons button:last-child {
   column-gap: 23px;
@@ -626,6 +647,11 @@ nav ul {
   border-width: 1px;
   border-color: #FFDC26;
   background-color: #FFDC26;
+  &:hover {
+    @media (hover: hover) {
+      background-color: #FFF9F4;
+    }
+  }
 }
 .menu {
   @media (width >= 64rem) {
@@ -704,6 +730,11 @@ nav ul {
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
   color: var(--color-black);
+  &:hover {
+    @media (hover: hover) {
+      background-color: #FFF9F4;
+    }
+  }
   @media (width >= 48rem) {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -811,6 +842,7 @@ nav ul {
 .category {
   display: grid;
   height: calc(var(--spacing) * 56);
+  cursor: pointer;
   place-content: center;
   row-gap: calc(var(--spacing) * 6);
   border-radius: 10.45px;
@@ -942,6 +974,7 @@ nav ul {
 }
 .trending-main-product button {
   display: grid;
+  cursor: pointer;
   column-gap: calc(var(--spacing) * 2);
   place-self: start;
   border-radius: var(--radius-md);
@@ -953,6 +986,11 @@ nav ul {
   line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
+  &:hover {
+    @media (hover: hover) {
+      background-color: #a59c6d;
+    }
+  }
   @media (width >= 48rem) {
     border-radius: var(--radius-lg);
   }
@@ -1026,6 +1064,7 @@ nav ul {
 .product {
   display: flex;
   width: 100%;
+  cursor: pointer;
   align-items: center;
   justify-content: flex-start;
   column-gap: calc(var(--spacing) * 2.5);

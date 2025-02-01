@@ -26,7 +26,7 @@ nav h1 {
 }
 
 nav ul {
-  @apply hidden lg:flex lg:items-center lg:text-xl cursor-pointer;
+  @apply hidden lg:flex lg:items-center lg:text-lg xl:text-xl cursor-pointer;
 }
 
 .nav-buttons {
@@ -34,15 +34,15 @@ nav ul {
 }
 
 .nav-buttons button {
-  @apply flex rounded-lg cursor-pointer px-[30px] py-2.5;
+  @apply flex rounded-lg cursor-pointer px-[30px] py-2.5 lg:text-lg xl:text-xl;
 }
 
 .nav-buttons button:first-child {
-  @apply gap-x-2.5 border border-[#FFDC26];
+  @apply gap-x-2.5 border border-[#FFDC26] lg:text-lg hover:bg-amber-200;
 }
 
 .nav-buttons button:last-child {
-  @apply gap-x-[23px] border border-[#FFDC26] bg-[#FFDC26];
+  @apply gap-x-[23px] border border-[#FFDC26] bg-[#FFDC26] hover:bg-[#FFF9F4];
 }
 
 .menu {
@@ -74,7 +74,7 @@ nav ul {
 }
 
 .banner-text button {
-  @apply place-self-start flex rounded-lg cursor-pointer px-[30px] py-2.5 border border-[#FFDC26] bg-[#FFDC26] gap-x-2.5 text-base font-sora text-black font-normal md:text-xl;
+  @apply place-self-start flex rounded-lg cursor-pointer px-[30px] py-2.5 border border-[#FFDC26] bg-[#FFDC26] hover:bg-[#FFF9F4] gap-x-2.5 text-base font-sora text-black font-normal md:text-xl;
 }
 
 .banner-container img {
@@ -130,7 +130,7 @@ nav ul {
 }
 
 .category {
-  @apply grid place-content-center border rounded-[10.45px] bg-[#F9DF8A] border-[#F9DF8A] h-56 md:h-64 gap-y-6;
+  @apply grid place-content-center border rounded-[10.45px] bg-[#F9DF8A] border-[#F9DF8A] h-56 md:h-64 gap-y-6 cursor-pointer;
 }
 
 .category-img {
@@ -181,7 +181,7 @@ nav ul {
 }
 
 .trending-main-product button {
-  @apply grid place-self-start px-6 md:px-[30px] py-2 md:py-3 gap-x-2 rounded-md md:rounded-lg bg-white font-sora text-base md:text-xl font-normal;
+  @apply grid place-self-start px-6 md:px-[30px] py-2 md:py-3 gap-x-2 rounded-md md:rounded-lg bg-white font-sora text-base md:text-xl font-normal cursor-pointer hover:bg-[#a59c6d];
 }
 
 .trending-main-product img {
@@ -211,7 +211,7 @@ nav ul {
 }
 
 .product {
-  @apply border-[0.6px] border-black/10 rounded-md flex items-center justify-start gap-x-2.5 pl-2 pr-3 py-2 w-full;
+  @apply border-[0.6px] border-black/10 rounded-md flex items-center justify-start gap-x-2.5 pl-2 pr-3 py-2 w-full cursor-pointer;
 }
 
 .product-img {
