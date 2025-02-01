@@ -658,6 +658,9 @@ nav ul {
     display: none;
   }
 }
+main {
+  position: relative;
+}
 .banner-container {
   position: relative;
   margin-bottom: calc(var(--spacing) * 24);
@@ -1252,14 +1255,21 @@ nav ul {
 .everyday-price-container {
   padding-inline: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 10);
+  padding-bottom: calc(var(--spacing) * 96);
   @media (width >= 48rem) {
     padding-block: calc(var(--spacing) * 16);
+  }
+  @media (width >= 48rem) {
+    padding-bottom: calc(var(--spacing) * 84);
   }
   @media (width >= 64rem) {
     padding-inline: calc(var(--spacing) * 10);
   }
   @media (width >= 64rem) {
     padding-block: calc(var(--spacing) * 22);
+  }
+  @media (width >= 64rem) {
+    padding-bottom: calc(var(--spacing) * 96);
   }
   @media (width >= 80rem) {
     padding-inline: calc(var(--spacing) * 16);
@@ -1527,18 +1537,197 @@ nav ul {
     display: grid;
   }
 }
-footer {
-  background-color: color-mix(in oklab, #FFDC26 50%, transparent);
+.newsletter-container {
+  position: absolute;
+  bottom: calc(var(--spacing) * -88);
+  z-index: 50;
+  width: 100%;
   padding-inline: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 10);
   @media (width >= 48rem) {
+    bottom: calc(var(--spacing) * -48);
+  }
+  @media (width >= 48rem) {
     padding-block: calc(var(--spacing) * 16);
+  }
+  @media (width >= 64rem) {
+    bottom: calc(var(--spacing) * -70);
   }
   @media (width >= 64rem) {
     padding-inline: calc(var(--spacing) * 10);
   }
   @media (width >= 64rem) {
     padding-block: calc(var(--spacing) * 22);
+  }
+  @media (width >= 80rem) {
+    padding-inline: calc(var(--spacing) * 16);
+  }
+}
+.newsletter {
+  display: grid;
+  place-content: center;
+  border-radius: var(--radius-lg);
+  background-color: #FFF9F4;
+  padding-bottom: calc(var(--spacing) * 12);
+  @media (width >= 48rem) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @media (width >= 48rem) {
+    column-gap: calc(var(--spacing) * 6);
+  }
+  @media (width >= 48rem) {
+    border-radius: var(--radius-2xl);
+  }
+  @media (width >= 48rem) {
+    padding: calc(var(--spacing) * 10);
+  }
+  @media (width >= 80rem) {
+    column-gap: calc(var(--spacing) * 0);
+  }
+}
+.newsletter img {
+  --tw-scale-x: 75%;
+  --tw-scale-y: 75%;
+  --tw-scale-z: 75%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+  @media (width >= 48rem) {
+    grid-column: span 1 / span 1;
+  }
+  @media (width >= 48rem) {
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    --tw-scale-z: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  @media (width >= 64rem) {
+    --tw-scale-x: 105%;
+    --tw-scale-y: 105%;
+    --tw-scale-z: 105%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+}
+.newsletter-texts {
+  display: grid;
+  place-content: center;
+  row-gap: calc(var(--spacing) * 4);
+  text-align: center;
+  @media (width >= 48rem) {
+    grid-column: span 2 / span 2;
+  }
+  @media (width >= 48rem) {
+    align-items: center;
+  }
+  @media (width >= 48rem) {
+    justify-content: flex-start;
+  }
+  @media (width >= 48rem) {
+    row-gap: calc(var(--spacing) * 6);
+  }
+  @media (width >= 48rem) {
+    text-align: left;
+  }
+  @media (width >= 64rem) {
+    row-gap: calc(var(--spacing) * 8);
+  }
+}
+.newsletter-texts h1 {
+  font-family: var(--font-adlam_display);
+  font-size: 22px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  @media (width >= 48rem) {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+}
+.newsletter-texts h2 {
+  max-width: calc(var(--spacing) * 80);
+  font-family: var(--font-sora);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  @media (width >= 48rem) {
+    max-width: fit-content;
+  }
+  @media (width >= 64rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+}
+.newsletter-texts input {
+  width: 90%;
+  place-self: center;
+  border-radius: var(--radius-md);
+  background-color: var(--color-white);
+  padding-inline: calc(var(--spacing) * 2);
+  padding-block: calc(var(--spacing) * 2);
+  font-family: var(--font-sora);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: calc(var(--spacing) * 8);
+  line-height: calc(var(--spacing) * 8);
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-black);
+  &::placeholder {
+    color: #C4C4C4;
+  }
+  @media (width >= 48rem) {
+    place-self: start;
+  }
+  @media (width >= 48rem) {
+    border-radius: var(--radius-lg);
+  }
+  @media (width >= 48rem) {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+}
+.newsletter-texts button {
+  display: grid;
+  max-width: fit-content;
+  cursor: pointer;
+  place-content: center;
+  column-gap: calc(var(--spacing) * 2.5);
+  place-self: center;
+  border-radius: var(--radius-md);
+  background-color: #FFDC26;
+  padding-inline: calc(var(--spacing) * 6);
+  padding-block: calc(var(--spacing) * 2);
+  font-family: var(--font-sora);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  @media (width >= 48rem) {
+    place-self: start;
+  }
+  @media (width >= 48rem) {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+}
+footer {
+  position: relative;
+  background-color: color-mix(in oklab, #FFDC26 50%, transparent);
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 10);
+  padding-top: calc(var(--spacing) * 96);
+  @media (width >= 48rem) {
+    padding-block: calc(var(--spacing) * 16);
+  }
+  @media (width >= 48rem) {
+    padding-top: calc(var(--spacing) * 54);
+  }
+  @media (width >= 64rem) {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  @media (width >= 64rem) {
+    padding-block: calc(var(--spacing) * 22);
+  }
+  @media (width >= 64rem) {
+    padding-top: calc(var(--spacing) * 76);
   }
   @media (width >= 80rem) {
     padding-inline: calc(var(--spacing) * 16);
@@ -1767,4 +1956,8 @@ footer {
   syntax: "<length-percentage>";
   inherits: false;
   initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
 }

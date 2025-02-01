@@ -53,6 +53,10 @@ nav ul {
 *MARK: NAVBAR 
 */
 
+main {
+  @apply relative;
+}
+
 /* 
 *MARK: BANNER 
 */
@@ -152,7 +156,6 @@ nav ul {
 *MARK: CATEGORIES 
 */
 
-
 /* 
 *MARK: FUNC_FACT
 */
@@ -186,7 +189,6 @@ nav ul {
 /* 
 *MARK: FUNC_FACT
 */
-
 
 /* 
 *MARK: TRENDING 
@@ -285,7 +287,7 @@ nav ul {
 */
 
 .everyday-price-container {
-  @apply px-4 py-10 md:py-16 lg:py-22 lg:px-10 xl:px-16;
+  @apply px-4 py-10 pb-96 md:pb-84 lg:pb-96 md:py-16 lg:py-22 lg:px-10 xl:px-16;
 }
 
 .everyday-price-container h1 {
@@ -391,12 +393,50 @@ nav ul {
 *MARK: EVERYDAY_PRICE 
 */
 
+/*
+*MARK: NEWSLETTER 
+*/
+.newsletter-container {
+  @apply px-4 py-10 w-full md:py-16 lg:py-22 lg:px-10 xl:px-16 absolute -bottom-88 md:-bottom-48 lg:-bottom-70 z-50;
+}
+
+.newsletter {
+  @apply bg-[#FFF9F4] rounded-lg md:rounded-2xl grid place-content-center md:grid-cols-3 md:gap-x-6 xl:gap-x-0 pb-12  md:p-10;
+}
+
+.newsletter img {
+  @apply scale-75 md:scale-100 lg:scale-105 md:col-span-1;
+}
+
+.newsletter-texts {
+  @apply grid place-content-center md:items-center md:justify-start text-center md:text-left gap-y-4 md:gap-y-6 lg:gap-y-8 md:col-span-2;
+}
+
+.newsletter-texts h1 {
+  @apply font-adlam_display font-normal text-[22px] md:text-4xl;
+}
+
+.newsletter-texts h2 {
+  @apply font-sora font-normal text-base lg:text-xl max-w-80 md:max-w-fit;
+}
+
+.newsletter-texts input {
+  @apply w-[90%] px-2 py-2 bg-white rounded-md md:rounded-lg font-sora text-sm md:text-base leading-8 font-normal place-self-center md:place-self-start placeholder:text-[#C4C4C4] text-black;
+}
+
+.newsletter-texts button {
+  @apply px-6 py-2 grid place-content-center gap-x-2.5 rounded-md bg-[#FFDC26] font-sora font-normal text-sm md:text-base max-w-fit place-self-center md:place-self-start cursor-pointer;
+}
+/*
+*MARK: NEWSLETTER 
+*/
+
 /* 
 *MARK: FOOTER 
 */
 
 footer {
-  @apply px-4 py-10 md:py-16 lg:py-22 lg:px-10 xl:px-16 bg-[#FFDC26]/50;
+  @apply px-4 py-10 pt-96 md:pt-54 lg:pt-76 md:py-16 lg:py-22 lg:px-10 xl:px-16 bg-[#FFDC26]/50 relative;
 }
 
 .footer-container {
