@@ -164,7 +164,7 @@ main {
 }
 
 .fun-fact-container h1 {
-  @apply font-normal font-adlam_display text-2xl md:text-4xl xl:mt-16 mb-6;
+  @apply font-normal font-adlam_display text-2xl md:text-4xl xl:mt-16 mb-6 md:mb-12;
 }
 
 .fun-fact-contents {
