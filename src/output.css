@@ -927,6 +927,9 @@ main {
   place-content: center;
   row-gap: calc(var(--spacing) * 2.5);
   @media (width >= 48rem) {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  @media (width >= 48rem) {
     display: flex;
   }
   @media (width >= 48rem) {
