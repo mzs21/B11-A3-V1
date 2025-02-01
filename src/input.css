@@ -331,8 +331,8 @@ nav ul {
   }
 }
 
-.scnd-product h1{
-  @apply lg:-mb-0
+.scnd-product h1 {
+  @apply lg:-mb-0;
 }
 
 .fst-product-features {
@@ -354,3 +354,60 @@ nav ul {
 /* 
 *MARK: EVERYDAY_PRICE 
 */
+
+/* 
+*MARK: FOOTER 
+*/
+
+footer {
+  @apply px-4 py-10 md:py-16 lg:py-22 lg:px-10 xl:px-16 bg-[#FFDC26]/50;
+}
+
+.footer-container {
+  @apply grid place-content-start gap-y-9 lg:grid-cols-3;
+}
+
+.footer-logo-contents {
+  @apply grid place-content-start gap-y-4 lg:gap-y-6;
+}
+
+.footer-logo {
+  @apply flex gap-x-3 items-center;
+}
+
+.footer-logo h1 {
+  @apply text-xl lg:text-[26px];
+}
+
+.footer-logo-contents p {
+  @apply font-sora font-normal text-base xl:text-xl text-black/70;
+}
+
+@media screen and (max-width: 375px) {
+  .footer-logo-contents p {
+    @apply text-sm;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-logo-contents p {
+    @apply text-xs;
+  }
+}
+
+.footer-container ul {
+  @apply grid place-content-start gap-y-5 lg:gap-y-8 font-sora text-base lg:text-xl font-normal lg:place-content-center;
+}
+
+.social-media {
+  @apply grid place-content-start gap-y-1 md:gap-y-2 lg:gap-y-3 lg:place-content-end;
+}
+
+.social-media h1 {
+  @apply text-sm lg:text-base lg:font-medium font-sora font-normal;
+}
+
+.social-icons {
+  @apply flex items-center justify-between gap-x-[30px];
+}
+/* *MARK: FOOTER */
